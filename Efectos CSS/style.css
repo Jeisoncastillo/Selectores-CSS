@@ -3,63 +3,94 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-min-height: 1%;
 margin:0;
 font-family: Georgia, 'Times New Roman', Times, serif;
-background:rgba(200,100,50,0.7);
+background:white;
 color:rgba(255,255,255,0.6);
 }
 
-header, footer{
+header{
 text-align: center;
-padding: 20px;
+width: 100%;
+padding:auto;
 background-color: #333;
+
 
 }
 
 .container{
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-}
-
-.logo{
-height: 50px;
-
-
-}
-
-header.{
-top: 0;
-}
-
-footer{
-    bottom: 0;
-    margin:auto;
-    padding:auto;
-
-
-}
-
-div{
     display: flex;
     align-items: center;
-    justify-content: ;
-    transition: border 1s ease;
-    width: 75px;
-    height: 75px;
-    margin: 10px;
-    padding: 20px;
+    justify-content:center ;
+    text-align: center;
+    margin: 1px;
+    padding:1%;
 }
 
-div.hover{
-border: 5px solid rgba(255,255,255,0.6);
+.container.hover{
+border: 5px solid rgba(70, 10, 10, 0.6);
+}
+
+
+img{
+border-radius: 50%;
+border-style: double;
+color: white;
+box-shadow: 0px 0px 30px 10px;
+transition:
+ box-shadow 5s ease;
+}
+
+img:hover{
+   box-shadow: 0px 10px 30px black;
+   border-radius: white;
+   border: black;
+
+}
+
+
+footer,p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+    margin:auto;
+    padding:10;
+    width: 100%;
+    background-color: #333;
+
+
 }
 
 .circle1{
-background: rgba(0,0,0,0.6);
+background: rgba(255, 255, 255, 0.6);
+border:5px solid rgba(200,100,50,0.7);
+width: 75px;
+height: 75px;
+border-radius: 50%;
+box-shadow: 0 5px 20px rgba(50,0,50,0.5);
+margin: 10px;
+padding: 10px;
+cursor: pointer;
+transition:
+   border-color 2s ease,
+   background-color 2s ease,
+   box-shadow 5s ease,
+   width 100px  2s ease,
+   height 100px 2s ease;
+}
+
+.circle1:hover {
+background-color: rgb(255,250,50);
+box-shadow: 0px 20px 30px black;
+width: 100px;
+height: 100px;
+}
+
+
+.circle2{
+background: rgba(255, 255, 255, 0.6);
 border:5px solid rgba(200,100,50,0.7);
 width: 75px;
 height: 75px;
@@ -69,33 +100,64 @@ margin: 10px;
 padding: 20px;
 cursor: pointer;
 transition:
- border-color 1s ease,
- background-color 1s ease,
- box-shadow 1s ease;
-}
-
-.circle1:hover {
-background-color: rgb(255, 0, 0);
-box-shadow: 0px 10px 30px black;
-}
-
-
-.circle2{
-background: rgba(0,0,0,0.6);
-border:5px solid rgba(200,100,50,0.7);
-
-border-radius: 50%;
-box-shadow: 0 5px 20px rgba(50,0,50,0.5);
-
-cursor: pointer;
-transition:
-  border-color 1s ease,
-  background-color 1s ease,
-  box-shadow 1s ease;
+   border-color 2s ease,
+   background-color 2s ease,
+   box-shadow 2s ease;
 }
 
 .circle2:hover {
+background-color: rgb(255, 100, 250);
+box-shadow: 0px 10px 30px black;
+padding: 45px;
+}
+
+.circle3{
+background: rgba(255, 255, 255, 0.6);
+border:5px solid rgba(200,100,50,0.7);
+width: 75px;
+height: 75px;
+border-radius: 50%;
+box-shadow: 0 5px 20px rgba(50,0,50,0.5);
+margin: 10px;
+padding: 30px;
+cursor: pointer;
+transition:
+   border-color 2s ease,
+   background-color 2s ease,
+   box-shadow 2s ease;
+}
+
+.circle3:hover{
 background-color: rgb(255, 0, 0);
 box-shadow: 0px 10px 30px black;
+padding: 70px;
+}
+
+.circle4{
+background: rgba(255, 255, 255, 0.6);
+border:5px solid rgba(100,100,50,0.7);
+width: 75px;
+height: 75px;
+border-radius: 50%;
+box-shadow: 0 5px 20px rgba(50,0,50,0.5);
+margin: 10px;
+padding: 40px;
+cursor: pointer;
+
+   transition:
+   border-color 12s ease,
+   background-color 12s ease,
+   box-shadow 12s ease,
+   width 10s ease,
+   height 10s ease;
+}
+
+.circle4:hover{
+border-color: aquamarine;
+background-color: rgb(241, 241, 241);
+box-shadow: 0px 10px 30px black;
+width: 1000px;
+height: 1000px;
+
 }
 
